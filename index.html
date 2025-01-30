@@ -18,8 +18,8 @@
         }
     </style>
 </head>
-<body>
-    <header class="font-eb-garamond md:mx-14 lg:mx-28">
+<body class="font-eb-garamond">
+    <header class="md:mx-14 lg:mx-28">
         <nav>
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
@@ -40,7 +40,7 @@
                     </div>
                     <ul
                       tabindex="0"
-                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow font-bold text-gray-500 text-lg">
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-44 h-44 p-2 shadow font-bold text-gray-500 text-5xl">
                       <li><a>Home</a></li>
                       <li><a>Services</a></li>
                       <li><a>Cases</a></li>
@@ -72,7 +72,7 @@
         <button class="btn bg-[#B68C5A] text-white font-bold text-lg hover:text-[#B68C5A] hover:bg-gray-200 border-[#B68C5A]">Search</button>
         </div>
     </header>
-    <main class="font-eb-garamond md:mx-14 lg:mx-28">
+    <main class="md:mx-14 lg:mx-28">
         <!-- Legal Practice Section -->
         <section>
             <div class="justify-center text-center mt-20 mb-10">
@@ -202,7 +202,7 @@
           </div>
           <div class="grid grid-cols-1 lg:grid-cols-2">
             <!--Contact Us Cards-->
-            <div class="mb-5 grid grid-cols-2">
+            <!--<div class="mb-5 grid grid-cols-2">
               <div class="card bg-gray-200 w-64 border border-stone-300">
                 <figure class="px-10 pt-10">
                   <img src="images/location.png" alt="Location Icon" />
@@ -239,9 +239,37 @@
                   <p>Mon-Fri: 9AM to 5PM<br>Sunday: 9AM to 1 PM</p>
                 </div>
               </div>
+            </div>-->
+            
+            <div class="grid grid-cols-2 bg-gray-200 m-5">
+              <!-- Box 1 -->
+              <div class="flex flex-col items-center justify-center border border-gray-300 p-6">
+                <img src="images/location.png" alt="Address Icon" class="w-10 h-10 mb-2">
+                <h4 class="card-title">Address</h4>
+                <p>A108 Adam Street,<br> New York, NY 535022</p>
+              </div>
+              <!-- Box 2 -->
+              <div class="flex flex-col items-center justify-center border border-gray-300 p-6">
+                <img src="images/call.png" alt="Phone Icon" class="w-10 h-10 mb-2">
+                <h4 class="card-title">Call Us</h4>
+                <p>+88 01750 00 00 00<br>+88 01750 00 00 00</p>
+              </div>
+              <!-- Box 3 -->
+              <div class="flex flex-col items-center justify-center border border-gray-300 p-6">
+                <img src="images/email.png" alt="Email Icon" class="w-10 h-10 mb-2">
+                <h4 class="card-title">Email</h4>
+                <p>info@gmail.com<br>info@gmail.com</p>
+              </div>
+              <!-- Box 4 -->
+              <div class="flex flex-col items-center justify-center border border-gray-300 p-6">
+                <img src="images/time.png" alt="Time Icon" class="w-10 h-10 mb-2">
+                <h4 class="card-title">Working Hours</h4>
+                <p>Mon-Fri: 9AM to 5PM<br>Sunday: 9AM to 1 PM</p>
+              </div>
             </div>
+            
             <!--Contact Us Input-->
-            <div class="w-[570px]">
+            <div class="lg:w-[570px]">
               <label class="input input-bordered flex items-center mb-5">
                 <input type="text" class="grow" placeholder="Your Name" />
               </label>
@@ -254,18 +282,17 @@
               <label class="input input-bordered flex items-center mb-5 h-40">
                 <input type="text" class="grow" placeholder="Your Message" />
               </label>
-              <button class="w-[570px] btn bg-[#B68C5A] text-white font-bold text-lg hover:text-[#B68C5A] hover:bg-gray-100 border-[#B68C5A]">Send Message</button>
+              <button class="lg:w-[570px] btn bg-[#B68C5A] text-white font-bold text-lg hover:text-[#B68C5A] hover:bg-gray-100 border-[#B68C5A]">Send Message</button>
             </div>
           </div>
         </section>
     </main>
-    <footer class="footer bg-black text-white mt-20 p-24">
-      <aside class="mr-4">
-       <img src="images/logo.png" alt="logo image" class="mb-5">
-        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
-        </p>
-      </aside>
-      <nav class="mr-4">
+    <footer class="footer bg-black text-white text-base-content p-10 mt-20 lg:px-28">
+      <nav>
+        <img class="mb-5" src="images/logo.png" alt="logo image">
+        <p>There are many variations of passages of Lorem Ipsum available,<br> but the majority have suffered alteration in some form, by injected humour.</p>
+      </nav>
+      <nav>
         <h6 class="font-bold text-2xl mb-5">Useful Links</h6>
         <a class="link link-hover">Home</a>
         <a class="link link-hover">About Us</a>
@@ -273,21 +300,27 @@
         <a class="link link-hover">Blog</a>
         <a class="link link-hover">Contact Us</a>
       </nav>
-      <nav class="mr-4">
+      <nav>
         <h6 class="font-bold text-2xl mb-5">Contact Now</h6>
-        <a class="link link-hover">555 4th 5t NW, Washington<br>DC 20530, United States</a>
-        <a class="link link-hover">+88 01750 000 000<br>+88 01750 000 000</a>
-        <a class="link link-hover">info@gmail.com<br>info@gmail.com</a>
+        <a class="link link-hover">555 4th 5t NW, Washington<br>
+          DC 20530, United States</a>
+        <a class="link link-hover">+88 01750 000 000<br>
+          +88 01750 000 000</a>
+        <a class="link link-hover">info@gmail.com<br>
+          info@gmail.com</a>
       </nav>
-      <form class="mr-4">
+      <form>
         <h6 class="font-bold text-2xl mb-5">Subscribe</h6>
-        <fieldset class="form-control">
+        <fieldset class="form-control w-80">
           <label class="label">
-            <p>Subscribe for our latest & Articles.<br> We Won’t Give You Spam Mails</p>
+            <span class="label-text text-white">Subscribe for our latest & Articles. We Won’t Give You Spam Mails</span>
           </label>
           <div class="join">
-            <input type="text" placeholder="Email Address" class="input input-bordered join-item" />
-            <button class="btn btn-primary bg-[#B68C5A] border-[#B68C5A] join-item w-16 hover:bg-slate-500 border-none"><img src="images/paper.png" alt="message send icon"></button>
+            <input
+              type="text"
+              placeholder="Email Address"
+              class="input input-bordered join-item" />
+            <button class="btn btn-primary w-16 bg-[#B68C5A] border-none join-item hover:bg-gray-200 border-gray-500"><img src="images/paper.png" alt="send icon"></button>
           </div>
         </fieldset>
       </form>
